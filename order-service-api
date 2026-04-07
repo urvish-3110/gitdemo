@@ -1,0 +1,9 @@
+order-service-api/
+ ├── src/main/java/com/example/order/
+ │    ├── controller/OrderController.java
+ │    ├── model/Order.java
+ │    ├── service/OrderService.java
+ │    ├── client/UserClient.java
+ │    └── OrderServiceApplication.java
+ ├── src/main/resources/application.properties
+ └── pom.xml
