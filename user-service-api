@@ -1,0 +1,8 @@
+user-service-api/
+ ├── src/main/java/com/example/user/
+ │    ├── controller/UserController.java
+ │    ├── model/User.java
+ │    ├── service/UserService.java
+ │    └── UserServiceApplication.java
+ ├── src/main/resources/application.properties
+ └── pom.xml
