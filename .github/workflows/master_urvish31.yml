@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - Urvish31
+name: Build and deploy Node.js app to Azure Web App - urvish31
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4B1D746BC1F44FAF8C9CAB0E6EF93268 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F4E1846515BB4F979698F910203A6E95 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_5184060B5E7A4D8D8E566C2C6DF8E3BE }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5AFF0937E3C143E1865144500A695687 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B19E5B9EDF234DEDB07745BD54135AD8 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_FC35A52BDD1440968A73B9C83F462CD4 }}
 
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Urvish31'
+          app-name: 'urvish31'
           slot-name: 'Production'
           package: .
           
