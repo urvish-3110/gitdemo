@@ -1,0 +1,19 @@
+name: CI/CD Docker Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Build Docker Image
+      run: docker build -t my-site .
+
+    - name: Run Container (Test)
+      run: docker run -d -p 8080:80 my-site
